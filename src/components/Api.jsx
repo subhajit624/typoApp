@@ -3,7 +3,7 @@ const fetchOpenRouterMessage = async (userPrompt) => {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: "Bearer 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",
           "HTTP-Referer": "https://your-website.com",
           "X-Title": "MySiteTitle",
           "Content-Type": "application/json",
