@@ -1,0 +1,32 @@
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    height: auto;
+}
+.boxer {
+    position: relative;          
+    padding: 12px;
+    width: 150px;
+    border-radius: 8%;
+    background-color: whitesmoke;
+    height: 150px;               
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .boxer img {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 24px;                 
+    height: 24px;
+  }
+  .boxer:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+  }
+  

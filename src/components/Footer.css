@@ -1,0 +1,24 @@
+
+.footer {
+    margin-top: 25px;
+  }
+  
+  .footer h5 {
+    display: inline-block;
+    animation: moveLeftRight 6s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes moveLeftRight {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 42%;
+    }
+    100% {
+      left: 85%;
+    }
+  }
+  
+  

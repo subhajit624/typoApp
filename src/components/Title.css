@@ -1,0 +1,17 @@
+.title {
+    text-align: center;     
+}
+
+.title h2 {
+  margin: 5px 0; 
+}
+.title2 h2 {
+    color: rgb(183, 179, 179);
+}
+.title1 h2 {
+    font-weight: bold;
+    background: linear-gradient(to right, #5A88FF, #8F49A6, #FF4B4B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }

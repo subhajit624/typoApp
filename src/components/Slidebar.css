@@ -1,0 +1,57 @@
+.slidebar {
+    background-color: whitesmoke;
+    min-width: auto;
+    max-width: 230px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .newchat{
+    display: flex;
+    border-radius:15px;
+    gap: 5px;
+    background-color: rgb(234, 228, 228);
+    cursor: pointer;
+    padding : 3px;
+    
+  }
+  .help{
+    display: flex;
+    border-radius:8%;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .activity{
+    display: flex;
+    border-radius:8%;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .setting{
+    display: flex;
+    border-radius:8%;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  
+  .recent-task {
+    margin-top: 40px;
+    cursor: pointer; 
+  }
+  
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px; 
+  }
+  
