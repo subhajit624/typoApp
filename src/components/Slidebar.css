@@ -54,4 +54,14 @@
     gap: 15px;
     margin-bottom: 20px; 
   }
-  
+  .recent-task ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+  }
+  .recent-task ul li {
+    max-width: 15ch;         
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+  }

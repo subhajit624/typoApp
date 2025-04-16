@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { fetchOpenRouterMessage } from "./Api";
-import './SearshBar.css';
+import "./SearshBar.css";
 
-function SearchBar({ setResponse, setShow, userInput, setUserInput }) {
+function SearchBar({ setResponse, setShow, userInput, setUserInput, onSearch }) {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async () => {
@@ -10,16 +9,11 @@ function SearchBar({ setResponse, setShow, userInput, setUserInput }) {
     setLoading(true);
 
     try {
-      const message = await fetchOpenRouterMessage(userInput);
-      setResponse(message); // Update response
-      setShow(false); // Hide Title and Box, show the result
-    } catch (error) {
-      setResponse("Error fetching data.");
+      await onSearch(); // 👈 trigger parent-side logic
     } finally {
       setLoading(false);
     }
   };
-
 
   return (
     <div className="searchbar">
