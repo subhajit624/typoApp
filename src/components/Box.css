@@ -1,32 +1,54 @@
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    height: auto;
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  height: auto;
 }
+
 .boxer {
-    position: relative;          
-    padding: 12px;
-    width: 150px;
-    border-radius: 8%;
-    background-color: whitesmoke;
-    height: 150px;               
-    text-align: left;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  padding: 12px;
+  width: 150px;
+  border-radius: 8%;
+  background-color: whitesmoke;
+  height: 150px;
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boxer img {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.boxer:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Small screen: hide last two boxes */
+@media (max-width: 480px) {
+  .boxer:nth-child(3),
+  .boxer:nth-child(4) {
+    display: none;
   }
-  
+
+  /* Optional: shrink the remaining boxes a bit */
+  .boxer:nth-child(1),
+  .boxer:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+
   .boxer img {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    width: 24px;                 
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
-  .boxer:hover {
-    transform: translateY(-5px) scale(1.05); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    cursor: pointer;
-  }
-  
+}

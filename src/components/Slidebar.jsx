@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Slidebar.css';
  function Slidebar({ recentTasks, onRecentClick }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const handleRefresh = () => window.location.reload();
 
