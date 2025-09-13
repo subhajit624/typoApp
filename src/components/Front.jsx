@@ -92,7 +92,6 @@ function Front() {
           onSearch={handleSearch}
         />
 
-        {show ? <Footer /> : null}
       </div>
     </div>
   );
